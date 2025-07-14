@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOT - Serwis Komputerowy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER z logo i menu -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <img src="https://serwisroot.pl/wp-content/uploads/2022/08/cropped-logo_webp-scaled-1.webp" alt="ROOT" class="header-logo">
+            </a>
+            <button class="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#o-nas">O nas</a></li>
+                    <li><a href="#uslugi">Usługi</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#documents">Dokumenty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO: Wideo w tle, info o serwisie i formularz -->
+    <section class="hero-section" id="contact">
+        <video class="hero-bg-video" autoplay loop muted playsinline poster="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg">
+            <source src="3866849-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje wideo w tle.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+            <div class="hero-info">
+                <h1>ROOT - Serwis Komputerowy</h1>
+                <p>Profesjonalny serwis komputerowy. Naprawiamy komputery, laptopy, smartfony i inne urządzenia elektroniczne.</p>
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fas fa-phone-square-alt"></i> (48) 694-504-789</div>
+                    <div class="contact-item"><i class="fas fa-envelope-open"></i> KONTAKT@SERWISROOT.PL</div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <h2>Formularz kontaktowy</h2>
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko *</label>
+                        <input type="text" id="name" name="name" required placeholder="Przedstaw nam się!">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres e-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="Na przykład: jan@kowalski.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numer telefonu</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Przykład. +48 100 200 300">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Np. Proszę o wycenę wymiany matrycy w MacBook PRO 2015 MID, dokładny model XYZ532432."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <span class="checkmark"></span>
+                            Zgoda na przetwarzanie danych osobowych *
+                        </label>
+                        <p class="consent-text">Zaznaczając to okno, wyrażasz zgodę na przetwarzanie Twoich danych osobowych w celu przedstawienia oferty oraz kontaktu w jej sprawie.</p>
+                    </div>
+                    <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Sekcja O nas -->
+    <section class="about-section" id="o-nas">
+        <div class="container">
+            <h2 class="section-title">O nas</h2>
+            <div class="section-underline"></div>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            ROOT – Serwis Komputerowy to miejsce, gdzie Twój sprzęt trafia w ręce doświadczonych specjalistów. Nazwa nawiązuje do konta „root" w systemach Unix - 
+                            symbolu pełnej kontroli i bezpieczeństwa.
+                        </p>
+                        <p>
+                            Od 2021 roku pomagamy klientom z Tarnowskich Gór i okolic w naprawie komputerów, laptopów i urządzeń elektronicznych. Nasze doświadczenie i pasja do technologii 
+                            pozwalają nam oferować usługi na najwyższym poziomie.
+                        </p>
+                        <p>
+                            Specjalizujemy się w naprawie urządzeń Apple, komputerów PC, laptopów oraz odzyskiwaniu danych. Oferujemy również kompleksowe wsparcie IT dla firm oraz 
+                            tworzenie stron internetowych.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Lata doświadczenia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Naprawionych urządzeń</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5.0</div>
+                            <div class="stat-label">Opinia GOOGLE</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24h</div>
+                            <div class="stat-label">Czas reakcji</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Profesjonalne narzędzia</h3>
+                        <p>Używamy najnowocześniejszych narzędzi diagnostycznych i naprawczych</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Gwarancja jakości</h3>
+                        <p>Na wszystkie naprawy udzielamy gwarancji i używamy oryginalnych części</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Szybka realizacja</h3>
+                        <p>W większości przypadków naprawy wykonujemy w ciągu 24-48 godzin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Nasze Usługi -->
+    <section class="services-section" id="uslugi">
+        <div class="container">
+            <h2 class="section-title">Nasze Usługi</h2>
+            <div class="section-underline"></div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>Urządzenia Apple</h3>
+                    <p>Naprawa iPhone, iPad, MacBook, iMac. Wymiana matryc, baterii, gniazd ładowania. Autoryzowane części Apple.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Komputery PC</h3>
+                    <p>Montaż, naprawa i modernizacja komputerów stacjonarnych. Diagnostyka, wymiana podzespołów, czyszczenie.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptopy</h3>
+                    <p>Naprawa laptopów wszystkich marek. Wymiana matryc, klawiatur, zasilaczy. Czyszczenie i konserwacja.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>Odzyskiwanie Danych</h3>
+                    <p>Profesjonalne odzyskiwanie danych z dysków twardych, SSD, pendrive'ów. Uszkodzenia mechaniczne i logiczne.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Strony Internetowe</h3>
+                    <p>Projektowanie i tworzenie stron www. Modernizacja istniejących stron. Hosting i domeny. SEO i marketing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Wsparcie IT dla Firm</h3>
+                    <p>Kompleksowe wsparcie IT dla mikro i małych przedsiębiorstw. Sieci komputerowe, serwery, bezpieczeństwo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="faq-title section-title">Najczęściej zadawane pytania</h2>
+            <div class="section-underline"></div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>Czy serwis może odebrać sprzęt z mojego domu?</div>
+                    <div class="faq-a">Oczywiście! Preferujemy takie rozwiązanie, sprzęt odbieramy prosto z adresu, który zostanie przez Państwa wskazany.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>Otrzymam potwierdzenie oddania sprzętu?</div>
+                    <div class="faq-a">Każde zgłoszenie serwisowe łączy się z uzupełnieniem dokumentu, który dokładnie określa co dzieje się z urządzeniem.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>Czy sprzęt można dostarczyć osobiście?</div>
+                    <div class="faq-a">Oczywiście, sprzęt można dostarczyć na adres znajdujący się w zakładce kontakt, jednak wcześniej należy się z nami skontaktować telefonicznie.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>Czy otrzymam dokumenty potwierdzające wykonanie usługi?</div>
+                    <div class="faq-a">Tak, nasze usługi polegają na profesjonalnym podejściu do Klienta. W momencie odbioru sprzętu otrzymujesz potwierdzenie mailowe.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>Czy otrzymam fakturę VAT?</div>
+                    <div class="faq-a">Tak, wystawiamy faktury VAT na nasze usługi.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q"><span class="faq-accent"></span>ROOT – Serwis komputerowy wystawia gwarancję?</div>
+                    <div class="faq-a">Gwarancja obejmuje 2 miesiące od momentu, w którym status naprawy zmienia się na "Odebrane". Szczegóły w regulaminie.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dokumenty -->
+    <section class="documents-section" id="documents">
+        <div class="container">
+            <h2 class="section-title">Dokumenty</h2>
+            <div class="section-underline"></div>
+            <div class="documents-grid">
+                <a href="regulamin.html" class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Regulamin serwisu komputerowego</h3>
+                    <p>Zasady świadczenia usług serwisowych, gwarancje i warunki współpracy</p>
+                </a>
+                <a href="polityka-prywatnosci.html" class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Polityka prywatności</h3>
+                    <p>Informacje o przetwarzaniu danych osobowych i bezpieczeństwie</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <strong>ROOT - Serwis Komputerowy</strong><br>
+                Rafał Kopczyk<br>
+                NIP: 6452592746<br>
+                REGON: 541310820<br>
+                <div class="footer-contact">
+                    <i class="fas fa-phone-square-alt"></i> (48) 694-504-789<br>
+                    <i class="fas fa-envelope-open"></i> kontakt@serwisroot.pl
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/serwisrootpl" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/serwisroot.pl/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">© 2021-2024 ROOT – Serwis Komputerowy</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('.hero-bg-video');
+        if(video) {
+          video.playbackRate = 0.75;
+        }
+      });
+    </script>
+</body>
+</html> 

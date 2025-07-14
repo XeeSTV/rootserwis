@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Backend FastAPI
+  backend:
+    build: ./backend
+    container_name: serwis-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+      - mail
+    volumes:
+      - ./backend:/app
+    networks:
+      - serwis-network
+
+  # Frontend React
+  frontend:
+    build: ./frontend
+    container_name: serwis-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - serwis-network
+
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    container_name: serwis-db
+    environment:
+      - POSTGRES_DB=${DB_NAME:-serwis}
+      - POSTGRES_USER=${DB_USER:-postgres}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - serwis-network
+
+  # Mail Server (MailHog - dla developmentu)
+  mail:
+    image: mailhog/mailhog:latest
+    container_name: serwis-mail
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+    networks:
+      - serwis-network
+
+  # Redis (dla cache)
+  redis:
+    image: redis:7-alpine
+    container_name: serwis-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - serwis-network
+
+volumes:
+  postgres_data:
+
+networks:
+  serwis-network:
+    driver: bridge 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin Serwisu Komputerowego - ROOT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .document-page {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+        }
+        
+        .document-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border: 1px solid rgba(125, 196, 44, 0.1);
+        }
+        
+        .document-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #7DC42C;
+        }
+        
+        .document-header h1 {
+            color: #222;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .document-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .document-content h2 {
+            color: #222;
+            font-size: 1.5rem;
+            margin: 30px 0 15px 0;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            font-weight: 600;
+        }
+        
+        .document-content h3 {
+            color: #222;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            font-weight: 500;
+        }
+        
+        .document-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .document-content ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        .document-content li {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #7DC42C;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: rgba(125, 196, 44, 0.1);
+        }
+        
+        .back-link:hover {
+            color: #5a9c1a;
+            background: rgba(125, 196, 44, 0.15);
+        }
+        
+        .back-link i {
+            margin-right: 8px;
+        }
+        
+        .company-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #7DC42C;
+        }
+        
+        .company-info p {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 600px) {
+            .document-container {
+                padding: 25px 20px;
+                margin: 0 15px;
+            }
+            
+            .document-header h1 {
+                font-size: 2rem;
+            }
+            
+            .document-content h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER z logo i menu -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <img src="https://serwisroot.pl/wp-content/uploads/2022/08/cropped-logo_webp-scaled-1.webp" alt="ROOT" class="header-logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#uslugi">Usługi</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#documents">Dokumenty</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Treść dokumentu -->
+    <section class="document-page">
+        <div class="container">
+            <div class="document-container">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Powrót do strony głównej
+                </a>
+                
+                <div class="document-header">
+                    <h1>REGULAMIN SERWISU KOMPUTEROWEGO</h1>
+                    <p>ROOT - Serwis Komputerowy Rafał Kopczyk</p>
+                </div>
+                
+                <div class="document-content">
+                    <h2>§1. POSTANOWIENIA OGÓLNE</h2>
+                    <p>1.1. Niniejszy regulamin określa zasady świadczenia usług serwisowych przez ROOT - Serwis Komputerowy Rafał Kopczyk, z siedzibą w Polsce.</p>
+                    <p>1.2. Serwis świadczy usługi naprawy i konserwacji sprzętu komputerowego, laptopów, smartfonów oraz innych urządzeń elektronicznych.</p>
+                    <p>1.3. Klientem może być każda osoba fizyczna lub prawna korzystająca z usług Serwisu.</p>
+
+                    <h2>§2. ZASADY PRZYJMOWANIA SPRZĘTU</h2>
+                    <p>2.1. Sprzęt może być dostarczony do Serwisu osobiście lub odebrany przez Serwis z miejsca wskazanego przez Klienta.</p>
+                    <p>2.2. W momencie przyjęcia sprzętu sporządzany jest protokół przyjęcia zawierający:</p>
+                    <ul>
+                        <li>Dane Klienta</li>
+                        <li>Opis sprzętu i jego stan</li>
+                        <li>Zgłoszony problem</li>
+                        <li>Szacowany koszt naprawy</li>
+                        <li>Przewidywany termin realizacji</li>
+                    </ul>
+                    <p>2.3. Klient otrzymuje kopię protokołu przyjęcia.</p>
+
+                    <h2>§3. DIAGNOZA I WYCENA</h2>
+                    <p>3.1. Serwis przeprowadza bezpłatną diagnozę sprzętu w celu określenia przyczyny usterki.</p>
+                    <p>3.2. Po diagnozie Klient otrzymuje szczegółową wycenę naprawy.</p>
+                    <p>3.3. Klient ma prawo do akceptacji lub odrzucenia wyceny w terminie 7 dni.</p>
+                    <p>3.4. W przypadku odrzucenia wyceny Klient ponosi koszt diagnozy w wysokości 50 zł.</p>
+
+                    <h2>§4. REALIZACJA NAPRAWY</h2>
+                    <p>4.1. Naprawa rozpoczyna się po akceptacji wyceny przez Klienta.</p>
+                    <p>4.2. Serwis dokłada wszelkich starań, aby naprawa została wykonana w podanym terminie.</p>
+                    <p>4.3. W przypadku opóźnień Serwis informuje Klienta o nowym terminie realizacji.</p>
+                    <p>4.4. Klient może śledzić postęp naprawy poprzez otrzymane potwierdzenie mailowe.</p>
+
+                    <h2>§5. GWARANCJA</h2>
+                    <p>5.1. Na wykonane naprawy Serwis udziela gwarancji na okres 2 miesięcy od momentu odbioru sprzętu.</p>
+                    <p>5.2. Gwarancja obejmuje wady materiałowe i wykonawcze.</p>
+                    <p>5.3. Gwarancja nie obejmuje:</p>
+                    <ul>
+                        <li>Uszkodzeń mechanicznych</li>
+                        <li>Uszkodzeń spowodowanych niewłaściwym użytkowaniem</li>
+                        <li>Uszkodzeń spowodowanych przepięciami elektrycznymi</li>
+                        <li>Usterk niezwiązanych z wykonaną naprawą</li>
+                    </ul>
+
+                    <h2>§6. ODBIÓR SPRZĘTU</h2>
+                    <p>6.1. Po zakończeniu naprawy Serwis informuje Klienta o możliwości odbioru sprzętu.</p>
+                    <p>6.2. Odbioru sprzętu dokonuje osoba, która go złożyła lub osoba upoważniona.</p>
+                    <p>6.3. Przy odbiorze Klient otrzymuje fakturę VAT oraz protokół zakończenia naprawy.</p>
+                    <p>6.4. Sprzęt nieodebrany w terminie 30 dni od zakończenia naprawy może zostać sprzedany w celu pokrycia kosztów.</p>
+
+                    <h2>§7. PŁATNOŚCI</h2>
+                    <p>7.1. Płatność za usługi serwisowe dokonywana jest przy odbiorze sprzętu.</p>
+                    <p>7.2. Serwis akceptuje płatności gotówkowe oraz przelewy bankowe.</p>
+                    <p>7.3. Wystawiane są faktury VAT na wszystkie usługi.</p>
+
+                    <h2>§8. OCHRONA DANYCH OSOBOWYCH</h2>
+                    <p>8.1. Serwis przetwarza dane osobowe Klientów zgodnie z obowiązującymi przepisami RODO.</p>
+                    <p>8.2. Szczegółowe informacje o przetwarzaniu danych znajdują się w Polityce Prywatności.</p>
+
+                    <h2>§9. POSTANOWIENIA KOŃCOWE</h2>
+                    <p>9.1. Regulamin wchodzi w życie z dniem publikacji.</p>
+                    <p>9.2. Serwis zastrzega sobie prawo do zmiany regulaminu.</p>
+                    <p>9.3. O zmianach regulaminu Klienci będą informowani drogą elektroniczną.</p>
+                    <p>9.4. W sprawach nieuregulowanych niniejszym regulaminem zastosowanie mają przepisy prawa polskiego.</p>
+
+                    <div class="company-info">
+                        <p><strong>ROOT - Serwis Komputerowy</strong></p>
+                        <p>Rafał Kopczyk</p>
+                        <p>NIP: 6452592746</p>
+                        <p>REGON: 541310820</p>
+                        <p>Tel: (48) 694-504-789</p>
+                        <p>Email: kontakt@serwisroot.pl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <strong>ROOT - Serwis Komputerowy</strong><br>
+                Rafał Kopczyk<br>
+                NIP: 6452592746<br>
+                REGON: 541310820<br>
+                <div class="footer-contact">
+                    <i class="fas fa-phone-square-alt"></i> (48) 694-504-789<br>
+                    <i class="fas fa-envelope-open"></i> kontakt@serwisroot.pl
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/serwisrootpl" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/serwisroot.pl/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">© 2021-2024 ROOT – Serwis Komputerowy</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
